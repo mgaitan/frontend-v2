@@ -80,10 +80,10 @@
 
 <div class="text-sm font-hairline">
   <div class="bg-white">
-    <div class="container flex justify-end relative">
-      <img class='w-6 inline' src="/static/img/svg/globe-icon.svg">
+    <div class="container flex flex-wrap justify-end relative">
+      <img src="/static/img/svg/globe-icon.svg">
       <select id="language" onchange="languageSwitcher(this)" class="block appearance-none text-edsgreen pl-2 rounded leading-tight bg-white">
-        <option value="en" data-language="en" data-language-name="English"><a href="#">ENGLISH</a></option>
+        <option value="en" data-language="en" data-language-name="English" selected><a href="#">ENGLISH</a></option>
         <option value="da" data-language="da" data-language-name="Danish"><a href="#">DANISH</a></option>
       </select>
       <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center py-3 px-4 text-edsgreen">
@@ -95,8 +95,8 @@
   <!-- Navbar -->
   <div class="bg-edsgray p-8">
     <div class="container">
-      <div class="flex justify-between">
-        <div class="flex content-center">
+      <div class="flex flex-wrap justify-between content-center">
+        <div>
           <img class='w-24 inline' src="/static/img/svg/edp-logo-cube.svg">
           <img class='w-64 inline px-8' src="/static/img/svg/edp-logo-text.svg">
         </div>
