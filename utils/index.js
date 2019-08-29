@@ -127,6 +127,22 @@ module.exports.convertToStandardCollection = (descriptor) => {
 }
 
 
+module.exports.groupToTrial = (group) => {
+  extras = group.extras.reduce((newObj, x) => Object.assign(newObj, {[x.key]: x.value}), {})
+
+  const trial = {
+    public_title: extras.public_title,
+    scientific_title: extras.scientific_title,
+    study_number: extras.study_number,
+    study_status: extras.study_status,
+    theme_molecule_desc: extras.theme_molecule_desc,
+  }
+
+  return trial
+}
+
+
+
 module.exports.convertToCkanSearchQuery = (query) => {
   const ckanQuery = {
     q: '',
